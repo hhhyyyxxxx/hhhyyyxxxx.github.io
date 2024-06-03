@@ -216,7 +216,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-06-03 17:18:58" itemprop="dateModified" datetime="2024-06-03T17:18:58+08:00">2024-06-03</time>
+      <time title="修改时间：2024-06-03 17:28:35" itemprop="dateModified" datetime="2024-06-03T17:28:35+08:00">2024-06-03</time>
     </span>
 
   
@@ -265,7 +265,7 @@
 </blockquote>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> NUML1SECTOR 	((SectorSize - 2 * sizeof(int)) / sizeof(int))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> NUML2SECTOR 	NumL1sector*(SectorSize/ sizeof(int))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXFILESIZE NumL2sector*SectorSize</span></span><br><span class="line"><span class="comment">// #define NumDirect 	((SectorSize - 2 * sizeof(int)) / sizeof(int))</span></span><br><span class="line"><span class="comment">// #define MaxFileSize 	(NumDirect * SectorSize)</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L1SECTORSIZE (SectorSize / sizeof(int))</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> L2SECTORSIZE 1</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2024/06/01/os/.%5Cimage%5Cfilesys2.png" alt="image-20240531114122271"></p>
+<p><img src="/2024/06/01/os/filesys2.png" alt="image-20240531114122271"></p>
 </li>
 <li><p>修改<code>filehdr.cc</code>：分别修改：</p>
 <p><code>FileHeader::Allocate()</code>方法</p>
